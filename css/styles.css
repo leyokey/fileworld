@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Yrsa:500&display=swap');
+body{
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+	font-family: "Avenir Next", "Avenir", "Nunito", sans-serif;
+}
+
+.container{
+	max-width: 1350px;
+	margin: auto;
+	/*background-color: yellow;*/
+	padding: 10px;
+}
+.row{
+	display: flex;
+	/*flex-wrap: wrap;*/
+}
+.col{
+	/*background-color: #eeeeee;*/
+	flex-grow: 1;
+	margin: 10px 1%;
+	padding: 5px .5%;
+	/*fullimgwidth is 1050*/
+}
+.subcol{
+/*	background-color: blue;*/
+}
+.subcol p{
+	padding-top: 16px;
+}
+.oneTwelfth{
+	flex-grow: 0;
+	width: 5.333%;
+}
+.twoTwelfth{
+	flex-grow: 0;
+	width: 13.333%;
+}
+.threeTwelfth{
+	flex-grow: 0;
+	width: 22.333%;
+}
+.fourTwelfth{
+	flex-grow: 0;
+	width: 30.333%;
+}
+.fiveTwelfth{
+	flex-grow: 0;
+	width: 38.333%;
+}
+.sixTwelfth{
+	flex-grow: 0;
+	width: 47.333%;
+}
+.sevenTwelfth{
+	flex-grow: 0;
+	width: 55.333%;
+}
+.eightTwelfth{
+	flex-grow: 0;
+	width: 63.333%;
+}
+.nineTwelfth{
+	flex-grow: 0;
+	width: 72.333%;
+}
+.tenTwelfth{
+	flex-grow: 0;
+	width: 80.333%;
+	/*imgwidth is 880*/
+}
+.elevenTwelfth{
+	flex-grow: 0;
+	width: 88.333%;
+}
+#logo{
+	float: right;
+	padding-right: 20px;
+}
+
+#logos, #typo, #color, #vandt, #downloadables{
+	margin-top: 50px;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	/*font-family: 'Yrsa', serif;*/
+	font-family: "Avenir Next", "Avenir", "Nunito", sans-serif;
+	font-size: 50px;
+}
+h2{
+	/*font-family: 'Yrsa', serif;*/
+	font-family: "Avenir Next", "Avenir", "Nunito", sans-serif;
+	font-size: 25px;
+	margin-top: 45px;
+/*	color: #0E4CA8;*/
+}
+h3{
+	font-size: 18px;
+	/*font-family: 'Yrsa', serif;*/
+	font-family: "Avenir Next", "Avenir", "Nunito", sans-serif;
+	padding-top: 20px;
+}
+p{
+	margin: 0px;
+	padding: 0px;
+	line-height: 27px;
+	font-size: 18px;
+}
+.center{
+	margin-left: 50px;
+}
+nav{
+	/*background-color: pink;*/
+	position: relative;
+}
+nav .navbox{
+	 position: -webkit-sticky; 
+  	position: sticky;
+  	top: 100px;
+  
+}
+
+.header{
+	position: fixed;
+  	background-color: rgba(238, 238, 238, 0.25);
+
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 100;
+}
+.is-hidden {
+    opacity: 0;
+    -webkit-transform: translate(0,-60px);
+    -webkit-transition: -webkit-transform .2s,background .3s, color .3s,opacity 0 .3s;
+  }
+  
+  .is-visible {
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -webkit-transition: -webkit-transform .2s,background .3s, color .3s;
+  }
+
+
+nav .navbox p{
+	margin-top: 15px;
+
+}
+nav .navbox p a{
+	color: #1B4FA2;
+	text-decoration: none;
+	font-size: 16px;
+
+}
+nav .navbox p a:hover{
+	color: #50B6E7;
+}
+html{
+	scroll-behavior: smooth;
+}
+.imgSizer{
+	max-width: 100%;
+	height: auto;
+}
+.webHide{
+	display: none;
+}
+
+
+/*TABLET SIZE*/
+@media only screen and (max-width: 875px){
+	#container{
+		background-color: orange;
+	}
+	.tabletOneSixth{
+		flex-grow: 0;
+		width: 13.666%;
+	}
+	.tabletTwoSixth{
+		flex-grow: 0;
+		width: 30.333%;
+	}
+	.tabletThreeSixth{
+		flex-grow: 0;
+		width: 47%;
+	}
+	.tabletFourSixth{
+		flex-grow: 0;
+		width: 63.666%;
+	}
+	.tabletFiveSixth{
+		flex-grow: 0;
+		width: 80.333%;
+	}
+	.tabletSixSixth{
+		flex-grow: 0;
+		width: 97%;
+	}
+	.tabletHide{ /*HOW TO HIDE STUFF AND SWAP IT FOR SOMETHING ELSE*/
+		display: none;
+	}
+	nav .navbox p a{
+	font-size: 14px;
+	}
+}
+
+/*MOBILE SIZE*/
+@media only screen and (max-width: 690px){
+	#container{
+		background-color: red;
+		padding-top: 20px;
+	}
+	/*.nest{
+		display: flex;
+		flex-direction: column;
+	}*/
+	.mobilestack{
+		/*background-color: green;*/
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+	.col{
+		flex-grow: 1;
+		width: 97%;
+	}
+	/*.mobilecol{
+		flex-grow: 1;
+		width: 97%;
+	}*/
+	/*nav .col{
+		flex-grow: 0;
+		width: 22%;
+	}*/
+	.mobileHide{
+		display: none;
+	}
+	.mobileShow{ /*HIDES SHIT UNTIL YOU TELL IT TO SHOW WITH INHERIT*/
+		display: inherit;
+	}
+	#mobilemenu{
+		background-color: rgba(238, 238, 238, 0.6);
+		position: fixed;
+		width: 100%;
+	}
+	#mobilemenu #logo{
+		padding-right: 30px;
+	}
+	#principles{
+		margin-top: 100px;
+	}
+	/*#downloadables p a{
+		text-decoration: none;
+	}*/
+	/*MOBILENAVHAMBURGERSTYLES*/
+		body{
+		  margin: 0;
+		  padding: 0;
+		  
+		  /* make it look decent enough */
+		 /* background: blue;*/
+		  color: #000000;
+		  font-family: "Avenir Next", "Avenir", "Nunito", sans-serif;
+		}
+
+		a{
+		  text-decoration: none;
+		  color: #232323;
+		  
+		  transition: color 0.3s ease;
+		}
+
+		a:hover{
+		  color: #38B9F9;
+		}
+		.header{
+			background-color: rgba(238, 238, 238, 0.75);
+		}
+		#menuToggle{
+		  display: block;
+		  position: fixed;
+		  top: 45px;
+		  left: 0px;
+		  
+		  z-index: 1;
+		  
+		  -webkit-user-select: none;
+		  user-select: none;
+		}
+
+		#menuToggle input{
+		  display: block;
+		  width: 40px;
+		  height: 32px;
+		  position: absolute;
+
+		  top: -25px;
+		  left: 30px;
+		  
+		  cursor: pointer;
+		  
+		  opacity: 0; /* hide this */
+		  z-index: 120; /* and place it over the hamburger */
+		  
+		  -webkit-touch-callout: none;
+		}
+
+		/*
+		 * Just a quick hamburger
+		 */
+		#menuToggle span{
+		  display: block;
+		  width: 33px;
+		  height: 4px;
+		  margin-bottom: 5px;
+		  top: -25px;
+		  left: 30px;
+		  position: relative;
+		  
+		  background: #E83A2C;
+		  border-radius: 3px;
+		  
+		  z-index: 1;
+		  
+		  transform-origin: 4px 0px;
+		  
+		  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		              opacity 0.55s ease;
+		}
+
+		#menuToggle span:first-child{
+		  transform-origin: 0% 0%;
+		}
+
+		#menuToggle span:nth-last-child(2){
+		  transform-origin: 0% 100%;
+		}
+
+		/* 
+		 * Transform all the slices of hamburger
+		 * into a crossmark.
+		 */
+		#menuToggle input:checked ~ span{
+		  opacity: 1;
+		  transform: rotate(45deg) translate(-2px, -1px);
+		  background: #E83A2C;
+		}
+
+		/*
+		 * But let's hide the middle one.
+		 */
+		#menuToggle input:checked ~ span:nth-last-child(3){
+		  opacity: 0;
+		  transform: rotate(0deg) scale(0.2, 0.2);
+		}
+
+		/*
+		 * Ohyeah and the last one should go the other direction
+		 */
+		#menuToggle input:checked ~ span:nth-last-child(2){
+		  transform: rotate(-45deg) translate(0, -1px);
+		}
+
+		/*
+		 * Make this absolute positioned
+		 * at the top left of the screen
+		 */
+		#menu{
+		  position: fixed;
+		  width: 300px;
+		  height: 800px;
+		  margin: -100px 0 0 0px;
+		  padding: 50px;
+		  padding-top: 125px;
+		  
+		  background: #ededed;
+		  list-style-type: none;
+		  -webkit-font-smoothing: antialiased;
+		  /* to stop flickering of text in safari */
+		  
+		  transform-origin: 0% 0%;
+		  transform: translate(-100%, 0);
+		  
+		  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+		}
+
+		#menu li{
+		  padding: 10px 0;
+		  font-size: 22px;
+		}
+
+		/*
+		 * And let's slide it in from the left
+		 */
+		#menuToggle input:checked ~ ul{
+		  transform: none;
+		}
+
+}
+
+
+
+
+
+
+
